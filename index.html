@@ -11,26 +11,7 @@
     <header>
         <img class="pug" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyeaw-QhEt8SfMyiZTvxFK4fS-R9YZCBH7mg&usqp=CAU">
         <h1>Which pug are you today?</h1>
-        <input class="search-bar" type="text" placeholder="search">
-        <button type="button">Click Me!</button>
-    </header>
-    <main>
-        <div class="pic">
-            <img src="https://i.etsystatic.com/38922439/r/il/97c23c/4782221265/il_1588xN.4782221265_pn3w.jpg">
-            <p Class="caption">Cool Pug</p>
-        </div>    
-        <div class="pic">
-            <img src="https://www.omlet.us/images/cache/1024/680/Dog-Pug-A_pug_sprinting_at_full_pace_with_it's_tongue_out.jpg">
-            <p Class="caption">Happy Pug</p>
-        </div>
-        <div class="pic">
-            <img src="https://www.rd.com/wp-content/uploads/2021/03/pug-s-head-leaning-on-tabletop.jpg?fit=696,464">
-            <p Class="caption">Sad Pug</p>
-        </div>
-        <div class="pic">
-            <img src="https://media1.popsugar-assets.com/files/thumbor/z-Rne6ITuEvTxLkVuFcUL5K8iag/0x101:1080x1181/fit-in/550x550/filters:format_auto-!!-:strip_icc-!!-/2020/05/22/743/n/1922243/a7bd70255ec802e7321f13.00533868_/i/pug-rescue-instagram-photos.jpg">
-            <p Class="caption">Pineapple Pug</p>
-        </div>
+        <button id="colorButton" type="button">Change color!</button>
         <script>
             let likesPugs = confirm("Do you like pugs?");
             if (likesPugs === true) {
@@ -48,8 +29,30 @@
             } else if (feeling === "sad") {
                 pug = "the third pug!"
             } 
-             let output = confirm(message + pug);
+            document.write('<p style="font-size: 15px;">' + message + pug + '</p>');
+            document.getElementById("colorButton").addEventListener("click", function() {
+            let color = prompt("Enter a color: ");
+            document.getElementById("colorButton").style.backgroundColor = color;
+            });
         </script>
+    </header>
+    <main >
+        <div class="pic">
+            <img src="https://i.etsystatic.com/38922439/r/il/97c23c/4782221265/il_1588xN.4782221265_pn3w.jpg">
+            <p Class="caption">Cool Pug</p>
+        </div>    
+        <div class="pic">
+            <img src="https://www.omlet.us/images/cache/1024/680/Dog-Pug-A_pug_sprinting_at_full_pace_with_it's_tongue_out.jpg">
+            <p Class="caption">Happy Pug</p>
+        </div>
+        <div class="pic">
+            <img src="https://www.rd.com/wp-content/uploads/2021/03/pug-s-head-leaning-on-tabletop.jpg?fit=696,464">
+            <p Class="caption">Sad Pug</p>
+        </div>
+        <div class="pic">
+            <img src="https://media1.popsugar-assets.com/files/thumbor/z-Rne6ITuEvTxLkVuFcUL5K8iag/0x101:1080x1181/fit-in/550x550/filters:format_auto-!!-:strip_icc-!!-/2020/05/22/743/n/1922243/a7bd70255ec802e7321f13.00533868_/i/pug-rescue-instagram-photos.jpg">
+            <p Class="caption">Pineapple Pug</p>
+        </div>
     </main>
     <footer>
         <div class="left">

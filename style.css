@@ -1,5 +1,6 @@
-.search-bar {
-    margin-bottom: 15px;
+#colorButton {
+    margin: 5px;
+    background-color: aliceblue;
 }
 
 img {
@@ -8,7 +9,7 @@ img {
 }
 
 .pug {
-    padding-top: 10px;;
+    padding-top: 5px;;
     width: 100px;
     height: 100px;
     border-radius: 30%;
