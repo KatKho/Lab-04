@@ -1,0 +1,24 @@
+.search-bar {
+    margin-bottom: 25px;
+}
+
+img {
+    width: 300px;
+    
+}
+
+.pug {
+    width: 150px;
+    border-radius: 30%;
+}
+
+svg {
+    width: 50px;
+}
+
+header {
+    text-align: center;
+}
+body {
+     background-image: url('vector-pattern-cartoon-rubber-duck-water-blue-background_605642-100.avif');
+}
