@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="index.js"></script>
     <header>
         <img class="pug" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyeaw-QhEt8SfMyiZTvxFK4fS-R9YZCBH7mg&usqp=CAU">
         <h1>Which pug are you today?</h1>
@@ -19,20 +20,11 @@
             } else {
                 alert('That\'s okay, pugs are not for everyone.');
             }
-            let message = "Check out ";
-            let pug = "the fourth pug!"
             let feeling = prompt("How are you feeling today?");
-            if (feeling === "good") {
-                pug = "the first pug!"
-            } else if (feeling === "happy") {
-                pug = "the second pug!"
-            } else if (feeling === "sad") {
-                pug = "the third pug!"
-            } 
-            document.write('<p style="font-size: 15px;">' + message + pug + '</p>');
+            checkValue(feeling);
             document.getElementById("colorButton").addEventListener("click", function() {
-            let color = prompt("Enter a color: ");
-            document.getElementById("colorButton").style.backgroundColor = color;
+                let color = prompt("Enter a color: ");
+                checkColor(color);
             });
         </script>
     </header>
