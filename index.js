@@ -31,3 +31,17 @@ function checkColor(value) {
         document.getElementById("colorButton").style.backgroundColor = value;
     }
 }
+ 
+
+function askRating(){
+    let number = prompt('What star rating would you give?');
+    while(!number) {
+        number = prompt('I really need those stars');
+    }
+    let count = 0;
+    for (let i = 0; i < number; i++) {
+        count++;
+        document.write('<img style ="width: 15px; height: 15px"; src="https://img.freepik.com/free-vector/start_53876-25533.jpg?w=2000"> ' );
+        document.write(count);
+    }
+}
